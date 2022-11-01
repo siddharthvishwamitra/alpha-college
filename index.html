@@ -8,14 +8,14 @@
 .css">
 <title>Prototype College</title>
 <script>
-        $(function () {
+$(function () {
             $('#nav a').on('click', function (e) {
                 e.preventDefault();
                 var page = $(this).attr('href');
                 $('#content').load(page);
             });
         });
-    </script>
+</script>
 </head>
 <body>
 <header>
