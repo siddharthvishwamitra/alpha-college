@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style
+.css">
+<title>Prototype College</title>
+</head>
+<body>
+<header>
+<img src="logo.png" alt="">
+</header>
+<noscript>
+<div class="padding-left-16">
+<p>JavaScript is disabled! Why you want to do so?
+Please enable JavaScript in your web browser!</p>
+</div>
+<style type="text/css">
+#no-js { display:none; }
+</style>
+</noscript>
+<div id="no-js">
+<div id="nav" class="scrollmenu">
+  <a class="active" href="home.html">Home</a>
+  <a href="notice.html">Notifications</a>
+  <a href="faculty.html">Faculty</a>
+  <a href="results.html">Results</a>
+  <a href="contact.html">Contact</a>
+</div>
+<div id="content">
+<!-- Center Content Starts -->
+<div class="center-content">
+<img src="img.jpg" class="img-css" alt="">
+<br>
+<center><a class="paybtn" href="/">Pay Fee Online</a></center>
+
+<!-- Gallery Starts -->
+<h2>Gallery</h2>
+<div class="Gallery">
+  
+<div class="GalleryImg">
+ <img src="img.jpg" alt="photo" />
+</div>
+  
+<div class="GalleryImg">
+ <img src="img.jpg" alt="photo" />
+</div>
+
+<div class="GalleryImg">
+<img src="img.jpg" alt="photo" />
+</div>
+
+<div class="GalleryImg">
+<img src="img.jpg" alt="photo" />
+</div>
+
+</div>
+<p class="right-side-link"><a href="#">More</a></p>
+<!-- Gallery Ends-->
+
+<!-- Center Content Ends -->
+</div></div>
+<footer>
+  <p>© 2021 Alpha College<br>All rights reserved</p>
+</footer>
+</div>
+<script>
+        $(function () {
+            $('#nav a').on('click', function (e) {
+                e.preventDefault();
+                var page = $(this).attr('href');
+                $('#content').load(page);
+            });
+        });
+    </script>
+</body>
+</html>
