@@ -7,6 +7,15 @@
 <link rel="stylesheet" href="style
 .css">
 <title>Prototype College</title>
+<script>
+        $(function () {
+            $('#nav a').on('click', function (e) {
+                e.preventDefault();
+                var page = $(this).attr('href');
+                $('#content').load(page);
+            });
+        });
+    </script>
 </head>
 <body>
 <header>
@@ -66,14 +75,5 @@ Please enable JavaScript in your web browser!</p>
   <p>© 2021 Alpha College<br>All rights reserved</p>
 </footer>
 </div>
-<script>
-        $(function () {
-            $('#nav a').on('click', function (e) {
-                e.preventDefault();
-                var page = $(this).attr('href');
-                $('#content').load(page);
-            });
-        });
-    </script>
 </body>
 </html>
