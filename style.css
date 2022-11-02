@@ -157,3 +157,7 @@ table.GeneratedTable thead {
   text-decoration: none;
   border-radius: 5px;
 }
+
+a {
+  text-decoration: none;
+}
