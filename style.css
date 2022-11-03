@@ -60,6 +60,10 @@ div.scrollmenu a:hover {
   padding: 10px;
 }
 
+.padding-left-16 p {
+  font-size: 90%;
+}
+
 footer {
   text-align: center;
   padding: 3px;
