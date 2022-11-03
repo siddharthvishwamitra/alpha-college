@@ -156,6 +156,7 @@ table.GeneratedTable thead {
   padding: 8px;
   text-decoration: none;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 a {
