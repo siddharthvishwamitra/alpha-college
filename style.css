@@ -52,12 +52,12 @@ div.scrollmenu a:hover {
 
 .center-content {
   text-align: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .padding-left-16 {
-  padding-left: 16px;
+  padding: 10px;
 }
 
 footer {
@@ -96,7 +96,6 @@ footer p {
   background-color: black;
   color: white;
   padding: 10px;
-  width: 95%;
 }
 
 ul {
@@ -105,7 +104,7 @@ ul {
 
 /* Table*/
 table.GeneratedTable {
-  width: 95%;
+  width: 100%;
   background-color: #ffffff;
   border-collapse: collapse;
   border-width: 2px;
