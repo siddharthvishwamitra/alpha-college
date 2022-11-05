@@ -22,7 +22,7 @@ header img {
 }
 
 div.scrollmenu {
-  background-color: #333;
+  background-color: #141414;
   overflow: auto;
   white-space: nowrap;
 }
@@ -73,17 +73,18 @@ footer p {
 
 /* Pay Button */
 .paybtn {
-  background-color: #141414;
-  border: 1px solid rgba(54, 54, 54, 0.6);
-  font-weight: 600;
+  background-color: #026ccc;
+  border: 4px double white;
+  font-weight: bold;
   position: relative;
   outline: none;
   border-radius: 50px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  height: 45px;
-  width: 90%;
+  padding: 10px;
+  max-width: 800px;
+  margin: 0% 5% 0% 5%;
   opacity: 1;
   text-decoration: none;
   color: white;
@@ -92,7 +93,7 @@ footer p {
 
 /* List */
 .title-line {
-  background-color: black;
+  background-color: #141414;
   color: white;
   padding: 10px;
 }
@@ -104,30 +105,30 @@ ul {
 /* Table*/
 table.GeneratedTable {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #e1f8dc;
   border-collapse: collapse;
   border-width: 2px;
-  border-color: #ffcc00;
+  border-color: #ffffff;
   border-style: solid;
   color: #000000;
 }
 
 table.GeneratedTable td, table.GeneratedTable th {
   border-width: 2px;
-  border-color: #ffcc00;
+  border-color: #ffffff;
   border-style: solid;
   padding: 3px;
 }
 
 table.GeneratedTable thead {
-  background-color: #ffcc00;
+  background-color: #e1f8dc;
 }
 
 /* Gallery*/
 .Gallery {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 16px 0px 16px;
+  padding: 0vw 2vw 0vw 2vw;
 }
 
 .GalleryImg {
@@ -154,10 +155,18 @@ table.GeneratedTable thead {
   color: white;
   padding: 8px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 2px;
   font-weight: bold;
 }
 
 a {
   text-decoration: none;
+}
+
+.timing {
+  width: 100%;
+}
+.timing th, td {
+background-color: #e1f8dc;
+padding: 3px;
 }
