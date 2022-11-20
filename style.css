@@ -66,10 +66,6 @@ footer {
   color: white;
 }
 
-footer p {
-  font-weight: bold;
-}
-
 
 /* Pay Button */
 .paybtn {
@@ -98,7 +94,7 @@ footer p {
   padding: 10px;
 }
 
-ul {
+#content ul {
   list-style-image: linear-gradient(to left bottom, red, blue);
 }
 

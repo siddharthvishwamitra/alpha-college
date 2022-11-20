@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha College - Another Home</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+$(function () {
+            $('#nav a').on('click', function (e) {
+                e.preventDefault();
+                var page = $(this).attr('href');
+                $('#content').load(page);
+            });
+        });
+ $(document).bind("contextmenu",function(e){
+  return false;
+    });
+    </script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  font-family: 'Space Mono', monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.header {
+  background-color: lightblue;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menubar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menubar li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.menubar li:hover {
+  background-color: #026ccc;
+}
+
+.aside {
+  background-color: #121212;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #121212;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 15px;
+}
+
+/* Pay Button */
+.paybtn {
+  background-color: #026ccc;
+  border: 4px double white;
+  font-weight: bold;
+  position: relative;
+  outline: none;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  max-width: 800px;
+  margin: 0% 5% 0% 5%;
+  opacity: 1;
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+
+/* Gallery*/
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.GalleryImg {
+  max-width: 50%;
+  padding: 0 10px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.GalleryImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.right-side-link {
+  text-align: right;
+  padding-right: 25px;
+  padding-top: 0px;
+  font-size: 1em;
+}
+
+.right-side-link a {
+  background-color: #141414;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<a href="/home2.html"><img src="logo.png" alt="Logo" width="150px"></a>
+</div>
+
+<noscript>
+<p>JavaScript is disabled! Why you want to do so?
+Please enable JavaScript in your web browser!</p>
+<style type="text/css">
+.row { display:none; }
+</style>
+</noscript>
+
+<div class="row">
+<div class="col-3 col-s-3 menubar" id="nav">
+<ul>
+<a href="notice.html"><li>Notifications</li></a>
+<a href="faculty.html"><li>Faculty</li></a>
+<a href="results.html"><li>Results</li></a>
+<a href="about.html"><li>About</li></a>
+<a href="contact.html"><li>Contact</li></a>
+</ul>
+</div>
+
+  <div class="col-9 col-s-12" id="content">
+<img src="images/college.jpg" class="img-css" width="100%">
+<br>
+<center><a class="paybtn" href="javascript:void(0)">Pay Fee Online</a></center>
+
+<!-- Gallery Starts -->
+<center><h2>Gallery</h2></center>
+<div class="Gallery">
+  
+<div class="GalleryImg">
+ <img src="images/img1.jpg" alt="photo" />
+</div>
+  
+<div class="GalleryImg">
+ <img src="images/img2.jpg" alt="photo" />
+</div>
+
+<div class="GalleryImg">
+<img src="images/img3.jpg" alt="photo" />
+</div>
+
+<div class="GalleryImg">
+<img src="images/img4.jpg" alt="photo" />
+</div>
+
+</div>
+<p class="right-side-link" style="margin-bottom:10px;"><a href="javascript:void(0)">More</a></p>
+<!-- Gallery Ends-->
+</div>
+
+</div>
+<div class="footer">
+  <p>&copy; Alpha College - All rights reserved</p>
+<a style="color:white;" href="/">[Revert to Version 1.0]</a>
+</div>
+
+</body>
+</html>
+
+
