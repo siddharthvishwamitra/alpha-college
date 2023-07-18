@@ -3,6 +3,7 @@
 * {
   font-family: 'Space Mono', monospace;
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -60,10 +61,11 @@ div.scrollmenu a:hover {
 }
 
 footer {
+  background-color: #121212;
+  color: #ffffff;
   text-align: center;
-  padding: 3px;
-  background-color: #333;
-  color: white;
+  font-size: 14px;
+  padding: 10px;
 }
 
 
@@ -74,7 +76,7 @@ footer {
   font-weight: bold;
   position: relative;
   outline: none;
-  border-radius: 50px;
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
