@@ -101,7 +101,7 @@ footer {
 #content .results {
   list-style-type: none;
   color: black;
-  font-size: 16px;
+  font-size: 15px;
   padding-left: 0px;
 }
 
@@ -128,8 +128,8 @@ footer {
 #content .notice{
   list-style-type: none;
   color: black;
-  font-size: 16px;
   padding-left: 0px;
+  font-size: 15px;
 }
 
 #content .notice li {
@@ -210,7 +210,7 @@ table.GeneratedTable thead {
 }
 
 p {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 a {
