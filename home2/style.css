@@ -6,6 +6,10 @@
   font-family: 'Space Mono', monospace;
 }
 
+body {
+  background-color: #ffffff;
+}
+
 a {
   text-decoration: none;
 }
