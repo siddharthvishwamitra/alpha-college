@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="style
-.css">
-<title>Faculty</title>
-</head>
-<body>
-<div class="padding-left-16">
-  <h2>Faculty</h2>
+<h2>Faculty</h2>
 <table class="GeneratedTable">
   <thead>
     <tr>
@@ -91,7 +81,5 @@
     </tr>
   </tbody>
 </table>
+<br>
 <p style="color:red;">Last Updated: October 31, 2022</p>
-</div>
-</body>
-</html>

@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="style
-.css">
-<title>Results</title>
-</head>
-<body>
-<div class="padding-left-16">
 <h2>Results</h2>
 <div class="title-line">July 20, 2022</div>
-<ul>
+<ul class="results">
 <a href="#"><li>Result Declared of B.A. Second Year 2022</li></a>
 <a href="#"><li>Result Declared of B.Sc. Second Year 2022</li></a>
 <a href="#"><li>Result Declared of B.A. NEP First Year 2022</li></a>
@@ -21,11 +11,9 @@
 
 <div class="title-line">July 9, 2022</div>
 
-<ul>
+<ul class="results">
 <a href="#"><li>Result Declared of B.Com. First Year 2022</li></a>
 <a href="#"><li>Result Declared of B.Com. Second Year 2022</li></a>
 </ul>
+<br>
 <p style="color:red;">Last Updated: October 31, 2022</p>
-</div>
-</body>
-</html>

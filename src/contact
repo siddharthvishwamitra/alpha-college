@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="style
-.css">
-<title>Contact</title>
-</head>
-<body>
 <style>
 th {
   text-align: left; 
 }
 </style>
-<div class="padding-left-16">
 <h2>Contact</h2>
 <table class="timing">
     <tr><th>Monday</th><td>11am - 4pm</td></tr>
@@ -30,6 +20,3 @@ Alpha Law College<br>
 Box 564, Disneyland<br>
 UK
 </address>
-
-</body>
-</html>

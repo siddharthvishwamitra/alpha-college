@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha College - Another Home</title>
+<link rel="stylesheet" href="style.css">
+<script src="/assets/jquery-3.7.0.min.js"></script>
+<script>
+$(function () {
+            $('#nav a').on('click', function (e) {
+                e.preventDefault();
+                var page = $(this).attr('href');
+                $('#content').load(page);
+            });
+        });
+ $(document).bind("contextmenu",function(e){
+  return false;
+    });
+    </script>
+</head>
+<body>
+
+<div class="header">
+<a href="/home2"><img src="/images/logo.png" alt="Logo" width="150px"></a>
+</div>
+
+<noscript>
+<p>JavaScript is disabled! Why you want to do so?
+Please enable JavaScript in your web browser!</p>
+<style type="text/css">
+.row { display:none; }
+</style>
+</noscript>
+
+<div class="row">
+<div class="col-3 col-s-3 menubar" id="nav">
+<ul>
+<a href="/src/notice"><li>Notifications</li></a>
+<a href="/src/faculty"><li>Faculty</li></a>
+<a href="/src/results"><li>Results</li></a>
+<a href="/src/about"><li>About</li></a>
+<a href="/src/contact"><li>Contact</li></a>
+</ul>
+</div>
+
+  <div class="col-9 col-s-12" id="content">
+<img src="/images/college.jpg" class="img-css" width="100%">
+<br>
+<center><a class="paybtn" href="javascript:void(0)">Pay Fee Online</a></center>
+
+<!-- Gallery Starts -->
+<center><h2>Gallery</h2></center>
+<div class="Gallery">
+  
+<div class="GalleryImg">
+ <img src="/images/img1.jpg" alt="photo" />
+</div>
+  
+<div class="GalleryImg">
+ <img src="/images/img2.jpg" alt="photo" />
+</div>
+
+<div class="GalleryImg">
+<img src="/images/img3.jpg" alt="photo" />
+</div>
+
+<div class="GalleryImg">
+<img src="/images/img4.jpg" alt="photo" />
+</div>
+
+</div>
+<p class="right-side-link" style="margin-bottom:10px;"><a href="javascript:void(0)">More</a></p>
+<!-- Gallery Ends-->
+</div>
+
+</div>
+<div class="footer">
+  <p>&copy; Alpha College - All rights reserved</p>
+<a style="color:white;" href="/">[Revert to Version 1.0]</a>
+</div>
+
+</body>
+</html>
