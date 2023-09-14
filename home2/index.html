@@ -96,21 +96,17 @@ Please enable JavaScript in your web browser!</p>
     setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
     
     $("a").click(function() {
-  // Start the first progress bar
   NProgress.start();
-
-  // After 1 second, set progress to 0.4
+  
   setTimeout(function() {
     NProgress.set(0.4);
-
-    // After another 0.5 seconds (1 seconds in total), stop the first progress bar
+    
     setTimeout(function() {
       NProgress.done();
-    }, 500);
+    }, 300);
 
-    // Start the 0.5 seconds progress bar
     NProgress.start();
-  }, 500);
+  }, 300);
 });
 </script>
 </body>
