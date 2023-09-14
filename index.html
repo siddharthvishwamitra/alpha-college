@@ -4,7 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="/assets/jquery-3.7.0.min.js"></script>
-<link rel="stylesheet" href="assets/style
+<script src='/assets/nprogress.js'></script>
+<link rel='stylesheet' href='/assets/nprogress.css'/>
+<link rel="stylesheet" href="/assets/style
 .css">
 <title>Alpha College</title>
 <script>
@@ -20,9 +22,13 @@ $(function () {
     });
     </script>
 </head>
-<body>
-<header>
+<body style="display:none;">
+<header class='page-header'>
+<span class='nprogress-logo fade out'></span>
 <a href="/"><img src="images/logo.png" alt="Logo"></a>
+
+<!-- style="background: transparent url('/images/loading.gif') center no-repeat;" -->
+
 </header>
 <noscript>
 <div class="padding-nojs">
@@ -86,5 +92,30 @@ Please enable JavaScript in your web browser!</p>
 <a style="color:white;" href="/home2">[Change to Version 2.0]</a>
 </footer>
 </div>
+
+<script>
+    $('body').show();
+    $('.version').text(NProgress.version);
+    NProgress.start();
+    setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
+    
+    $("a").click(function() {
+  // Start the first progress bar
+  NProgress.start();
+
+  // After 1 second, set progress to 0.4
+  setTimeout(function() {
+    NProgress.set(0.4);
+
+    // After another 0.5 seconds (1 seconds in total), stop the first progress bar
+    setTimeout(function() {
+      NProgress.done();
+    }, 500);
+
+    // Start the 0.5 seconds progress bar
+    NProgress.start();
+  }, 500);
+});
+</script>
 </body>
 </html>
