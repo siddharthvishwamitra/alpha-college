@@ -9,25 +9,10 @@
 <link rel="stylesheet" href="/assets/style
 .css">
 <title>Alpha College</title>
-<script>
-$(function () {
-            $('#nav a').on('click', function (e) {
-                e.preventDefault();
-                var page = $(this).attr('href');
-                $('#content').load(page);
-            });
-        });
- $(document).bind("contextmenu",function(e){
-  return false;
-    });
-    </script>
 </head>
 <body>
 <header>
 <a href="/"><img src="images/logo.png" alt="Logo"></a>
-
-<!-- style="background: transparent url('/images/loading.gif') center no-repeat;" -->
-
 </header>
 <noscript>
 <div class="padding-nojs">
@@ -35,57 +20,23 @@ $(function () {
 Please enable JavaScript in your web browser!</p>
 </div>
 <style type="text/css">
-#no-js { display:none; }
+#no-js {display:none;}
 </style>
 </noscript>
 <div id="no-js">
 <div id="nav" class="scrollmenu">
-  <a href="javascript:void(0)" onClick="window.location.reload(true)" class="active">Home</a>
+  <a href="src/home" class="active">Home</a>
   <a href="src/notice">Notifications</a>
   <a href="src/faculty">Faculty</a>
   <a href="src/results">Results</a>
   <a href="src/about">About</a>
   <a href="src/contact">Contact</a>
 </div>
+
+<!-- Content Begins-->
 <div id="content">
-<!-- Center Content Starts -->
-<div class="center-content">
-<img src="images/college.jpg" class="img-css" alt="College">
-<center style="padding-top:10px;">
-<ul class="paybtn">
-<a href="javascript:void(0)"><li><img src="/images/enrol.png"> Apply Enrollment</li></a>
-<a href="javascript:void(0)"><li><img src="/images/fee.png"> Pay Fee Online</li></a>
-<a href="javascript:void(0)"><li><img src="/images/exam.png"> Fill Exam Form</li></a>
-<a href="javascript:void(0)"><li><img src="/images/id-card.png"> Print Admit Card</li></a>
-<a href="javascript:void(0)"><li><img src="/images/results.png"> Online Results</li></a>
-</ul>
-</center>
-<!-- Gallery Starts -->
-<h2>Gallery</h2>
-<div class="Gallery">
-  
-<div class="GalleryImg">
- <img src="images/img1.jpg" alt="photo" />
-</div>
-  
-<div class="GalleryImg">
- <img src="images/img2.jpg" alt="photo" />
-</div>
+</div><!-- Content Ends -->
 
-<div class="GalleryImg">
-<img src="images/img3.jpg" alt="photo" />
-</div>
-
-<div class="GalleryImg">
-<img src="images/img4.jpg" alt="photo" />
-</div>
-
-</div>
-<p class="right-side-link"><a href="javascript:void(0)">More</a></p>
-<!-- Gallery Ends-->
-
-<!-- Center Content Ends -->
-</div></div>
 <footer>
 <p>&copy; Alpha College - All rights reserved</p>
 <a style="color:white;" href="/home2">[Change to Version 2.0]</a>
@@ -98,7 +49,22 @@ Please enable JavaScript in your web browser!</p>
     NProgress.start();
     setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
     
-    $("a").click(function() {
+    $(document).ready(function() {
+      $('#content').load('src/home');
+    });
+    
+    $(function() {
+      $('#nav a').on('click', function(e) {
+        e.preventDefault();
+        var page = $(this).attr('href');
+        $('#content').load(page);
+      });
+    });
+    $(document).bind("contextmenu", function(e) {
+      return false;
+    });
+    
+    $("#nav a").click(function() {
   NProgress.start();
 
   setTimeout(function() {

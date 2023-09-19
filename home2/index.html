@@ -8,18 +8,6 @@
 <script src="/assets/jquery-3.7.0.min.js"></script>
 <script src='/assets/nprogress.js'></script>
 <link rel='stylesheet' href='/assets/nprogress.css' />
-<script>
-$(function () {
-            $('#nav a').on('click', function (e) {
-                e.preventDefault();
-                var page = $(this).attr('href');
-                $('#content').load(page);
-            });
-        });
- $(document).bind("contextmenu",function(e){
-  return false;
-    });
-    </script>
 </head>
 <body>
 
@@ -46,44 +34,11 @@ Please enable JavaScript in your web browser!</p>
 </ul>
 </div>
 
-  <div class="col-9 col-s-12" id="content">
-<img src="/images/college.jpg" class="img-css">
-<center style="padding-top:10px;">
-<ul class="paybtn">
-<a href="javascript:void(0)"><li><img src="/images/enrol.png"> Apply Enrollment</li></a>
-<a href="javascript:void(0)"><li><img src="/images/fee.png"> Pay Fee Online</li></a>
-<a href="javascript:void(0)"><li><img src="/images/exam.png"> Fill Exam Form</li></a>
-<a href="javascript:void(0)"><li><img src="/images/id-card.png"> Print Admit Card</li></a>
-<a href="javascript:void(0)"><li><img src="/images/results.png"> Online Results</li></a>
-</ul>
-</center>
+<div class="col-9 col-s-12" id="content">
 
-<!-- Gallery Starts -->
-<center><h2>Gallery</h2></center>
-<div class="Gallery">
-  
-<div class="GalleryImg">
- <img src="/images/img1.jpg" alt="photo" />
-</div>
-  
-<div class="GalleryImg">
- <img src="/images/img2.jpg" alt="photo" />
-</div>
+</div> <!-- Content Id Ends -->
+</div> <!-- Row Class Ends -->
 
-<div class="GalleryImg">
-<img src="/images/img3.jpg" alt="photo" />
-</div>
-
-<div class="GalleryImg">
-<img src="/images/img4.jpg" alt="photo" />
-</div>
-
-</div>
-<p class="right-side-link" style="margin-bottom:10px;"><a href="javascript:void(0)">More</a></p>
-<!-- Gallery Ends-->
-</div>
-
-</div>
 <div class="footer">
   <p>&copy; Alpha College - All rights reserved</p>
 <a style="color:white;" href="/">[Revert to Version 1.0]</a>
@@ -95,12 +50,27 @@ Please enable JavaScript in your web browser!</p>
     NProgress.start();
     setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
     
-    $("a").click(function() {
+    $(document).ready(function() {
+      $('#content').load('home');
+    });
+    
+    $(function() {
+      $('#nav a').on('click', function(e) {
+        e.preventDefault();
+        var page = $(this).attr('href');
+        $('#content').load(page);
+      });
+    });
+    $(document).bind("contextmenu", function(e) {
+      return false;
+    });
+    
+    $("#nav a").click(function() {
   NProgress.start();
-  
+
   setTimeout(function() {
     NProgress.set(0.4);
-    
+
     setTimeout(function() {
       NProgress.done();
     }, 300);

@@ -21,6 +21,8 @@ header img {
 
 .img-css {
   width: 100%;
+  max-width: 850px;
+  text-align: center;
 }
 
 .padding-nojs {
@@ -86,9 +88,9 @@ footer {
   color: #030303;
   box-shadow: 2.5px 5px #030303;
   padding: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: 1px solid #030303;
-  max-width: 900px;
+  max-width: 800px;
 }
 
 .paybtn li:active {
@@ -190,7 +192,9 @@ table.GeneratedTable thead {
 .Gallery {
   display: flex;
   flex-wrap: wrap;
-  padding: 2vw 2vw 2vw 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vw;
 }
 
 .GalleryImg {
@@ -203,22 +207,6 @@ table.GeneratedTable thead {
 .GalleryImg img {
   width: 100%;
   height: 100%;
-}
-
-.right-side-link {
-  text-align: right;
-  padding-right: 20px;
-  padding-top: 0px;
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-.right-side-link a {
-  background-color: #141414;
-  color: white;
-  padding: 8px;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 p {

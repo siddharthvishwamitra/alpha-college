@@ -1,0 +1,33 @@
+<img src="/images/college.jpg" class="img-css">
+<center style="padding-top:10px;">
+<ul class="paybtn">
+<a href="javascript:void(0)"><li><img src="/images/enrol.png"> Apply Enrollment</li></a>
+<a href="javascript:void(0)"><li><img src="/images/fee.png"> Pay Fee Online</li></a>
+<a href="javascript:void(0)"><li><img src="/images/exam.png"> Fill Exam Form</li></a>
+<a href="javascript:void(0)"><li><img src="/images/id-card.png"> Print Admit Card</li></a>
+<a href="javascript:void(0)"><li><img src="/images/results.png"> Online Results</li></a>
+</ul>
+</center>
+
+<!-- Gallery Starts -->
+<center><h2>Gallery</h2></center>
+<div class="Gallery">
+  
+<div class="GalleryImg">
+ <img src="/images/img1.jpg" alt="photo" />
+</div>
+  
+<div class="GalleryImg">
+ <img src="/images/img2.jpg" alt="photo" />
+</div>
+
+<div class="GalleryImg">
+<img src="/images/img3.jpg" alt="photo" />
+</div>
+
+<div class="GalleryImg">
+<img src="/images/img4.jpg" alt="photo" />
+</div>
+
+</div>
+<!-- Gallery Ends-->
