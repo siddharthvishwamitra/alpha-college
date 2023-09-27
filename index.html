@@ -98,19 +98,6 @@ $(document).ready(function() {
     $('#content').load('src/home');
   }
 });
-
-$(function() {
-  $('#nav a').on('click', function(e) {
-    e.preventDefault();
-    var page = $(this).attr('href').replace('src/', '/?');
-
-    // Update the URL in the address bar without reloading the page
-    history.pushState(null, null, page);
-
-    // Load the content for the selected page
-    $('#content').load('src' + $(this).attr('href'));
-  });
-});
 </script>
 </body>
 </html>
