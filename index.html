@@ -77,6 +77,40 @@ Please enable JavaScript in your web browser!</p>
     NProgress.start();
   }, 300);
 });
+
+$(document).ready(function() {
+  // Parse the URL to get the query parameters
+  var queryParams = new URLSearchParams(window.location.search);
+
+  // Check if a specific parameter is present and load the corresponding page
+  if (queryParams.has("notice")) {
+    $('#content').load('src/notice');
+  } else if (queryParams.has("about")) {
+    $('#content').load('src/about');
+  } else if (queryParams.has("faculty")) {
+    $('#content').load('src/faculty');
+  } else if (queryParams.has("results")) {
+    $('#content').load('src/results');
+  } else if (queryParams.has("contact")) {
+    $('#content').load('src/contact');
+  } else {
+    // Default: load the home page
+    $('#content').load('src/home');
+  }
+});
+
+$(function() {
+  $('#nav a').on('click', function(e) {
+    e.preventDefault();
+    var page = $(this).attr('href').replace('src/', '/?');
+
+    // Update the URL in the address bar without reloading the page
+    history.pushState(null, null, page);
+
+    // Load the content for the selected page
+    $('#content').load('src' + $(this).attr('href'));
+  });
+});
 </script>
 </body>
 </html>
