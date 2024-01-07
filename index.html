@@ -34,36 +34,37 @@ Please enable JavaScript in your web browser!</p>
 </div>
 
 <script>
-  const changeUrlHandler = function(linkId) {
+  const changeUrlHandler = function(linkId, pageTitle) {
     const newState = { page: linkId };
-    const newTitle = `Page ${linkId} Title`;
+    const newTitle = pageTitle;
     const newUrl = `/${linkId}`;
 
     history.pushState(newState, newTitle, newUrl);
+    document.title = newTitle; // Update the title in the browser
   };
 
-document.getElementById('homelink').addEventListener('click', function() {
-  changeUrlHandler('index.html');
-});
+  document.getElementById('homelink').addEventListener('click', function() {
+    changeUrlHandler('index.html', 'Alpha College');
+  });
 
   document.getElementById('notice').addEventListener('click', function() {
-    changeUrlHandler('?notice');
+    changeUrlHandler('?notice', 'Notice');
   });
 
   document.getElementById('faculty').addEventListener('click', function() {
-    changeUrlHandler('?faculty');
+    changeUrlHandler('?faculty', 'Faculty');
   });
 
   document.getElementById('results').addEventListener('click', function() {
-    changeUrlHandler('?results');
+    changeUrlHandler('?results', 'Results');
   });
 
   document.getElementById('about').addEventListener('click', function() {
-    changeUrlHandler('?about');
+    changeUrlHandler('?about', 'About');
   });
 
   document.getElementById('contact').addEventListener('click', function() {
-    changeUrlHandler('?contact');
+    changeUrlHandler('?contact', 'Contact');
   });
 </script>
 
