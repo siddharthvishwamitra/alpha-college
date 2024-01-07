@@ -25,13 +25,47 @@ Please enable JavaScript in your web browser!</p>
 </noscript>
 <div id="no-js">
 <div id="nav" class="scrollmenu">
-  <a href="src/home" class="active">Home</a>
-  <a href="src/notice">Notifications</a>
-  <a href="src/faculty">Faculty</a>
-  <a href="src/results">Results</a>
-  <a href="src/about">About</a>
-  <a href="src/contact">Contact</a>
+  <a href="src/home" class="active" id="homelink">Home</a>
+  <a href="src/notice" id="notice">Notifications</a>
+  <a href="src/faculty" id="faculty">Faculty</a>
+  <a href="src/results" id="results">Results</a>
+  <a href="src/about" id="about">About</a>
+  <a href="src/contact" id="contact">Contact</a>
 </div>
+
+<script>
+  const changeUrlHandler = function(linkId) {
+    const newState = { page: linkId };
+    const newTitle = `Page ${linkId} Title`;
+    const newUrl = `/${linkId}`;
+
+    history.pushState(newState, newTitle, newUrl);
+  };
+
+document.getElementById('homelink').addEventListener('click', function() {
+  changeUrlHandler('index.html');
+});
+
+  document.getElementById('notice').addEventListener('click', function() {
+    changeUrlHandler('?notice');
+  });
+
+  document.getElementById('faculty').addEventListener('click', function() {
+    changeUrlHandler('?faculty');
+  });
+
+  document.getElementById('results').addEventListener('click', function() {
+    changeUrlHandler('?results');
+  });
+
+  document.getElementById('about').addEventListener('click', function() {
+    changeUrlHandler('?about');
+  });
+
+  document.getElementById('contact').addEventListener('click', function() {
+    changeUrlHandler('?contact');
+  });
+</script>
 
 <!-- Content Begins-->
 <div id="content">
