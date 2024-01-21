@@ -32,6 +32,8 @@ div.scrollmenu {
   background-color: #141414;
   overflow: auto;
   white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 div.scrollmenu::-webkit-scrollbar {
