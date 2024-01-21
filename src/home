@@ -1,19 +1,20 @@
 <!-- Center Content Starts -->
 <div class="center-content">
+<div class="container-hp">
 <img src="images/college.jpg" class="img-css" alt="College">
-<center style="padding-top:10px;">
+<!-- <center style="padding-top:10px;"> -->
 <ul class="paybtn">
 <a href="javascript:void(0)"><li><img src="/images/enrol.png"> Apply Enrollment</li></a>
-<a href="javascript:void(0)"><li><img src="/images/fee.png"> Pay Fee Online</li></a>
-<a href="javascript:void(0)"><li><img src="/images/exam.png"> Fill Exam Form</li></a>
-<a href="javascript:void(0)"><li><img src="/images/id-card.png"> Print Admit Card</li></a>
-<a href="javascript:void(0)"><li><img src="/images/results.png"> Online Results</li></a>
+<a href="javascript:void(0)"><li>Pay Fee Online</li></a>
+<a href="javascript:void(0)"><li>Fill Exam Form</li></a>
+<a href="javascript:void(0)"><li>Print Admit Card</li></a>
+<a href="javascript:void(0)"><li>Online Results</li></a>
 </ul>
-</center>
+</div>
+
 <!-- Gallery Starts -->
 <h2>Gallery</h2>
 <div class="Gallery">
-  
 <div class="GalleryImg">
  <img src="images/img1.jpg" alt="photo" />
 </div>
@@ -33,3 +34,33 @@
 </div>
 <!-- Gallery Ends-->
 </div>
+
+<style>
+.container-hp {
+display: block;
+}
+
+@media screen and (min-width: 600px) {
+.container-hp {
+box-sizing: border-box;
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+background-color: #f4f2f2;
+padding: 15px;
+}
+.container-hp .img-css {
+padding: 5px;
+vertical-align: middle;
+}
+.container-hp .paybtn {
+padding: 5px;
+vertical-align: middle;
+}
+.Gallery {
+padding: 10px 50px 50px 50px;
+}
+.center-content h2 {
+font-size: 30px;
+}
+</style>
