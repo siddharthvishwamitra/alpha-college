@@ -109,6 +109,8 @@ footer p, p a {
   border-bottom: 1px solid #e8e8e8;
   padding: 5px;
   vertical-align: middle;
+  font-family: "Inconsolata", monospace;
+  font-size: 17px;
 }
 #content .results li:before {
   content: "";
@@ -203,9 +205,7 @@ padding: 5px;
 border: 1px solid #ddd;
 }
 
-/* Gradients BG */
-/* Button Gradient Styles */
-
+/* Gradient Classes */
 .gradient_1 {
   background: linear-gradient(45deg, #ff7e5f, #feb47b);
   color: white;
@@ -214,7 +214,6 @@ border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
 }
-
 .gradient_2 {
   background: linear-gradient(45deg, #6a11cb, #2575fc);
   color: white;
@@ -223,7 +222,6 @@ border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
 }
-
 .gradient_3 {
   background: linear-gradient(45deg, #43cea2, #185a9d);
   color: white;
@@ -232,7 +230,6 @@ border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
 }
-
 .gradient_4 {
   background: linear-gradient(45deg, #ff9966, #ff5e62);
   color: white!important;
@@ -241,7 +238,6 @@ border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
 }
-
 .gradient_5 {
   background: linear-gradient(45deg, #36d1dc, #5b86e5);
   color: white;
@@ -250,7 +246,6 @@ border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
 }
-
 .gradient_6 {
   background: linear-gradient(45deg, #ee9ca7, #ffdde1);
   color: white;
@@ -259,7 +254,6 @@ border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
 }
-
 .gradient_7 {
   background: linear-gradient(45deg, #fc5c7d, #6a82fb);
   color: white;
@@ -268,7 +262,6 @@ border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
 }
-
 .gradient_8 {
   background: linear-gradient(45deg, #00c6ff, #0072ff);
   color: white;
@@ -277,7 +270,6 @@ border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
 }
-
 .gradient_9 {
   background: linear-gradient(45deg, #f2994a, #f2c94c);
   color: white;
@@ -286,7 +278,6 @@ border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
 }
-
 .gradient_10 {
   background: linear-gradient(45deg, #c33764, #1d2671);
   color: white;
