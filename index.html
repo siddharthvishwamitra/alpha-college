@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -6,135 +5,46 @@
 <script src="/assets/jquery-3.7.0.min.js"></script>
 <script src='/assets/nprogress.js'></script>
 <link rel='stylesheet' href='/assets/nprogress.css'/>
-<link rel="stylesheet" href="/assets/style
-.css">
+<link rel="stylesheet" href="/assets/style.css">
 <title>Alpha College</title>
 <meta name="description" content="Alpha College is a jQuery-based website template that's designed to showcase the features and benefits of a fictional college."/>
 <link rel="icon" type="image/x-icon" href="/assets/ac-favicon.png">
 </head>
 <body>
 <header>
-<a href="/"><img src="images/logo.png" alt="Logo"></a>
+  <a href="/"><img src="images/logo.png" alt="Logo"></a>
 </header>
+
 <noscript>
 <div class="padding-nojs">
-<p>JavaScript is disabled! Why you want to do so?
-Please enable JavaScript in your web browser!</p>
+  <p>JavaScript is disabled! Why you want to do so?
+  Please enable JavaScript in your web browser!</p>
 </div>
 <style type="text/css">
-#no-js {display:none;}
+  #no-js {display:none;}
 </style>
 </noscript>
+
 <div id="no-js">
-<div id="nav" class="scrollmenu">
-  <a href="src/home" class="active" id="homelink">Home</a>
-  <a href="src/notice" id="notice">Notifications</a>
-  <a href="src/faculty" id="faculty">Faculty</a>
-  <a href="src/results" id="results">Results</a>
-  <a href="src/about" id="about">About</a>
-  <a href="src/contact" id="contact">Contact</a>
+  <div id="nav" class="scrollmenu">
+    <a href="src/home" class="active" id="homelink">Home</a>
+    <a href="src/notice" id="notice">Notifications</a>
+    <a href="src/faculty" id="faculty">Faculty</a>
+    <a href="src/results" id="results">Results</a>
+    <a href="src/about" id="about">About</a>
+    <a href="src/contact" id="contact">Contact</a>
+  </div>
+
+  <!-- Content Begins-->
+  <div id="content">
+  </div><!-- Content Ends -->
+
+  <footer>
+    <p>&copy; Alpha College - All rights reserved</p>
+    <p>[<a style="text-decoration:none;color:white;" href="alt">Alternative Page</a>]</p>
+  </footer>
 </div>
 
-<script>
-  const changeUrlHandler = function(linkId, pageTitle) {
-    const newState = { page: linkId };
-    const newTitle = pageTitle;
-    const newUrl = `/${linkId}`;
-
-    history.pushState(newState, newTitle, newUrl);
-    document.title = newTitle; // Update the title in the browser
-  };
-
-  document.getElementById('homelink').addEventListener('click', function() {
-    changeUrlHandler('index.html', 'Alpha College');
-  });
-
-  document.getElementById('notice').addEventListener('click', function() {
-    changeUrlHandler('?notice', 'Notice');
-  });
-
-  document.getElementById('faculty').addEventListener('click', function() {
-    changeUrlHandler('?faculty', 'Faculty');
-  });
-
-  document.getElementById('results').addEventListener('click', function() {
-    changeUrlHandler('?results', 'Results');
-  });
-
-  document.getElementById('about').addEventListener('click', function() {
-    changeUrlHandler('?about', 'About');
-  });
-
-  document.getElementById('contact').addEventListener('click', function() {
-    changeUrlHandler('?contact', 'Contact');
-  });
-</script>
-
-<!-- Content Begins-->
-<div id="content">
-</div><!-- Content Ends -->
-
-<footer>
-<p>&copy; Alpha College - All rights reserved</p>
-<p>[<a style="text-decoration:none;color:white;" href="alt">Alternative Page</a>]</p>
-</footer>
-</div>
-
-<script>
-    $('body').show();
-    $('.version').text(NProgress.version);
-    NProgress.start();
-    setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
-    
-    $(document).ready(function() {
-      $('#content').load('src/home');
-    });
-    
-    $(function() {
-      $('#nav a').on('click', function(e) {
-        e.preventDefault();
-        var page = $(this).attr('href');
-        $('#content').load(page);
-      });
-    });
-    $(document).bind("contextmenu", function(e) {
-      return false;
-    });
-    
-    $("#nav a").click(function() {
-  NProgress.start();
-
-  setTimeout(function() {
-    NProgress.set(0.4);
-
-    setTimeout(function() {
-      NProgress.done();
-    }, 300);
-
-    NProgress.start();
-  }, 300);
-});
-
-$(document).ready(function() {
-  // Parse the URL to get the query parameters
-  var queryParams = new URLSearchParams(window.location.search);
-
-  // Check if a specific parameter is present and load the corresponding page
-  if (queryParams.has("notice")) {
-    $('#content').load('src/notice');
-  } else if (queryParams.has("about")) {
-    $('#content').load('src/about');
-  } else if (queryParams.has("faculty")) {
-    $('#content').load('src/faculty');
-  } else if (queryParams.has("results")) {
-    $('#content').load('src/results');
-  } else if (queryParams.has("contact")) {
-    $('#content').load('src/contact');
-  } else {
-    // Default: load the home page
-    $('#content').load('src/home');
-  }
-});
-</script>
+<script src="/assets/main.js"></script>
 </body>
 </html>

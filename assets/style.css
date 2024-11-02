@@ -54,10 +54,6 @@ background-color: #026ccc;
   border-bottom: 2px solid white;
 }
 
-div.scrollmenu a:hover {
-  color: #ffcc00;
-}
-
 #content {
   padding: 8px;
 }
