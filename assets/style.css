@@ -1,33 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 * {
   font-family: 'Space Mono', monospace;
   box-sizing: border-box;
   margin: 0;
 }
-
 body {
   margin: 0px;
   background-color: #ffffff;
 }
-
 header {
   padding: 10px
 }
-
 header img {
   width: 150px;
 }
-
 .img-css {
   width: 100%;
   text-align: center;
 }
-
 .padding-nojs {
   padding-left: 10px;
 }
-
 div.scrollmenu {
   background-color: #141414;
   overflow: auto;
@@ -35,49 +29,46 @@ div.scrollmenu {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 div.scrollmenu::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
-
 div.scrollmenu a {
+  font-family: "Inconsolata", monospace;
   display: inline-block;
   color: white;
   text-align: center;
   padding: 14px;
   text-decoration: none;
+  font-size: 17px;
 }
-
 div.scrollmenu a.active {
-background-color: #026ccc;
+  background-color: #026ccc;
   color: white; 
   border-bottom: 2px solid white;
 }
-
 #content {
   padding: 8px;
 }
-
 .center-content {
   text-align: center;
   padding-top: 12px;
   padding-bottom: 12px;
 }
-
 footer {
   background-color: #121212;
   color: #ffffff;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   padding: 20px;
 }
-
+footer p, p a {
+  font-family: "Inconsolata", monospace;
+}
 /* Pay Button */
 .paybtn {
   list-style-type: none;
   padding: 15px 0px 0px 0px;
 }
-
 .paybtn li {
   background-color: #ffffff;
   font-weight: normal;
@@ -89,40 +80,36 @@ footer {
   border-radius: 8px;
   font-size: 90%;
   padding: min(12px, 5%);
+  font-size: 15px;
+  font-weight: bold;
 }
-
 .paybtn li:active {
   transform: translateY(2px);
   box-shadow: 0px 4px #e8e8e8;
 }
-
 .paybtn li img {
-  width: 20%;
+  width: 10%;
   vertical-align: middle;
 }
-
 /* List */
 .title-line {
   background-color: #141414;
   color: white;
   padding: 10px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
 }
-
 #content .results {
   list-style-type: none;
   color: black;
-  font-size: 15px;
+  font-size: 14px;
   padding-left: 0px;
 }
-
 #content .results li {
   border-bottom: 1px solid #e8e8e8;
   padding: 5px;
   vertical-align: middle;
 }
-
 #content .results li:before {
   content: "";
   position: inline-block;
@@ -136,20 +123,17 @@ footer {
   background-image: url("/images/pdf.png");
   vertical-align: middle;
 }
-
 #content .notice{
   list-style-type: none;
   color: black;
   padding-left: 0px;
-  font-size: 15px;
+  font-size: 14px;
 }
-
 #content .notice li {
   border-bottom: 1px solid #e8e8e8;
   padding: 5px;
   vertical-align: middle;
 }
-
 #content .notice li:before {
   content: "";
   position: inline-block;
@@ -163,29 +147,24 @@ footer {
   background-image: url("/images/bell.png");
   vertical-align: middle;
 }
-
 /* Table*/
-table.GeneratedTable {
-  width: 100%;
-  background-color: #e1f8dc;
+.faculty_table {
   border-collapse: collapse;
-  border-width: 2px;
-  border-color: #ffffff;
-  border-style: solid;
-  color: #000000;
+  width: 100%;
+  font-size: 14px;
 }
-
-table.GeneratedTable td, table.GeneratedTable th {
-  border-width: 2px;
-  border-color: #ffffff;
-  border-style: solid;
-  padding: 5px;
+.faculty_table td, .faculty_table th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
-
-table.GeneratedTable thead {
-  background-color: #e1f8dc;
+.faculty_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #141414;
+  color: #ffffff;
+  text-align: center;
 }
-
 /* Gallery*/
 .Gallery {
   display: flex;
@@ -194,32 +173,131 @@ table.GeneratedTable thead {
   padding-right: 2vw;
   padding-top: 2vw;
 }
-
 .GalleryImg {
   max-width: 50%;
   padding: 0 10px;
   height: auto;
   margin-bottom: 10px;
 }
-
 .GalleryImg img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
-
 p {
   font-size: 15px;
 }
-
 a {
   text-decoration: none;
 }
-
+h2 {
+  font-family: "Inconsolata", monospace;
+  margin-bottom: 10px;
+}
 .timing {
   width: 100%;
+  border-collapse: collapse;
+}
+.timing th, td {
+padding: 5px;
+border: 1px solid #ddd;
 }
 
-.timing th, td {
-background-color: #e1f8dc;
-padding: 5px;
+/* Gradients BG */
+/* Button Gradient Styles */
+
+.gradient_1 {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gradient_2 {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gradient_3 {
+  background: linear-gradient(45deg, #43cea2, #185a9d);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gradient_4 {
+  background: linear-gradient(45deg, #ff9966, #ff5e62);
+  color: white!important;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gradient_5 {
+  background: linear-gradient(45deg, #36d1dc, #5b86e5);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gradient_6 {
+  background: linear-gradient(45deg, #ee9ca7, #ffdde1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gradient_7 {
+  background: linear-gradient(45deg, #fc5c7d, #6a82fb);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gradient_8 {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gradient_9 {
+  background: linear-gradient(45deg, #f2994a, #f2c94c);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gradient_10 {
+  background: linear-gradient(45deg, #c33764, #1d2671);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .mt-20 {
+    padding-top: 20px;
+  }
 }

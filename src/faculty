@@ -1,85 +1,64 @@
 <h2>Faculty</h2>
-<table class="GeneratedTable">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Subject</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Siddharth Kumar</td>
-      <td>Law</td>
-    </tr>
-    <tr>
-      <td>Vivek Diwakar</td>
-      <td>Mathematics</td>
-    </tr>
-     <tr>
-      <td>Torgeir Ravneng</td>
-      <td>English</td>
-    </tr>
-    <tr>
-      <td>Saurabh Yadav</td>
-      <td>Mathematics</td>
-    </tr>
-     <tr>
-      <td>Prashant Kushwah</td>
-      <td>Physics</td>
-    </tr>
-    <tr>
-      <td>Chinmaya Dixit</td>
-      <td>Hindi</td>
-    </tr>
-    <tr>
-      <td>Siddharth Kumar</td>
-      <td>Law</td>
-    </tr>
-    <tr>
-      <td>Vivek Diwakar</td>
-      <td>Mathematics</td>
-    </tr>
-     <tr>
-      <td>Torgeir Ravneng</td>
-      <td>English</td>
-    </tr>
-    <tr>
-      <td>Saurabh Yadav</td>
-      <td>Mathematics</td>
-    </tr>
-     <tr>
-      <td>Prashant Kushwah</td>
-      <td>Physics</td>
-    </tr>
-    <tr>
-      <td>Chinmaya Dixit</td>
-      <td>Hindi</td>
-    </tr>
-    <tr>
-      <td>Siddharth Kumar</td>
-      <td>Law</td>
-    </tr>
-    <tr>
-      <td>Vivek Diwakar</td>
-      <td>Mathematics</td>
-    </tr>
-    <tr>
-      <td>Torgeir Ravneng</td>
-      <td>English</td>
-    </tr>
-    <tr>
-      <td>Saurabh Yadav</td>
-      <td>Mathematics</td>
-    </tr>
-    <tr>
-      <td>Prashant Kushwah</td>
-      <td>Physics</td>
-    </tr>
-    <tr>
-      <td>Chinmaya Dixit</td>
-      <td>Hindi</td>
-    </tr>
-  </tbody>
+<table class="faculty_table">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Dept</th>
+    <th>Since</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>Dr. John Smith</td>
+  <td>Computer Science</td>
+  <td>2005</td>
+</tr>
+<tr>
+  <td>Prof. Mary Johnson</td>
+  <td>Physics</td>
+  <td>2010</td>
+</tr>
+<tr>
+  <td>Dr. Robert Brown</td>
+  <td>Mathematics</td>
+  <td>2008</td>
+</tr>
+<tr>
+  <td>Prof. Linda Davis</td>
+  <td>Chemistry</td>
+  <td>2012</td>
+</tr>
+<tr>
+  <td>Dr. Michael Wilson</td>
+  <td>Biology</td>
+  <td>2003</td>
+</tr>
+<tr>
+  <td>Prof. Barbara Miller</td>
+  <td>Engineering</td>
+  <td>2006</td>
+</tr>
+<tr>
+  <td>Dr. James Anderson</td>
+  <td>History</td>
+  <td>2011</td>
+</tr>
+<tr>
+  <td>Prof. Patricia Thomas</td>
+  <td>English</td>
+  <td>2007</td>
+</tr>
+<tr>
+  <td>Dr. Charles Jackson</td>
+  <td>Economics</td>
+  <td>2009</td>
+</tr>
+<tr>
+  <td>Prof. Jennifer White</td>
+  <td>Philosophy</td>
+  <td>2013</td>
+</tr>
+</tbody>
 </table>
 <br>
 <p style="color:red;">Last Updated: October 31, 2022</p>
