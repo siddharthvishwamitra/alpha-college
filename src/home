@@ -5,7 +5,7 @@
 <!-- <center style="padding-top:10px;"> -->
 <ul class="paybtn">
 <a href="javascript:void(0)"><li class="gradient_4"><img src="/images/enrol.png"> Apply Enrollment</li></a>
-<a href="javascript:void(0)"><li>Pay Fee Online</li></a>
+<a href="#" id="payfee"><li>Pay Fee Online</li></a>
 <a href="javascript:void(0)"><li>Fill Exam Form</li></a>
 <a href="javascript:void(0)"><li>Print Admit Card</li></a>
 <a href="javascript:void(0)"><li>Online Results</li></a>
