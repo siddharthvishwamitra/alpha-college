@@ -34,8 +34,8 @@
 
   <style>
     .pay-form {
-      max-width: 600px;
-      margin: 50px auto;
+      max-width: 800px;
+      margin: 20px auto;
       padding: 20px;
       background-color: #fff;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -64,6 +64,8 @@
       border: 1px solid #ccc;
       border-radius: 4px;
       font-size: 14px;
+      outline-color: black;
+      background: #ffffff;
     }
 
     .pay-form button {
