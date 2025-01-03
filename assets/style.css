@@ -31,7 +31,7 @@ div.scrollmenu {
   scrollbar-width: none;
 }
 div.scrollmenu::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
+    display: none;
 }
 div.scrollmenu a {
   font-family: "Inconsolata", monospace;
@@ -41,6 +41,8 @@ div.scrollmenu a {
   padding: 14px;
   text-decoration: none;
   font-size: 17px;
+  box-sizing: border-box;
+  transition: background-color 0.2s;
 }
 div.scrollmenu a.active {
   background-color: #026ccc;
