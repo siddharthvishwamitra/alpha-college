@@ -35,7 +35,7 @@ div.scrollmenu::-webkit-scrollbar {
 div.scrollmenu a {
   font-family: "Inconsolata", monospace;
   display: inline-block;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 14px;
   text-decoration: none;
@@ -43,8 +43,8 @@ div.scrollmenu a {
 }
 div.scrollmenu a.active {
   background-color: #026ccc;
-  color: white; 
-  border-bottom: 2px solid white;
+  color: #ffffff;
+  box-shadow: inset 0 -2px 0 0 #fff;
 }
 #content {
   padding: 8px;
