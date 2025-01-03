@@ -9,11 +9,22 @@ $(document).ready(function() {
     payfee: '/src/payfee',
   };
 
+  const pageTitles = {
+    home: 'Alpha College',
+    about: 'About',
+    contact: 'Contact',
+    notice: 'Notice',
+    faculty: 'Faculty',
+    results: 'Results',
+    payfee: 'Pay Fees',
+  };
+
   const loadPage = (linkId) => {
     if (pages[linkId]) {
       $('#content').load(pages[linkId]);
       $('a').removeClass('active');
       $(`#${linkId}`).addClass('active');
+      document.title = pageTitles[linkId] || 'Default Title';
     }
   };
 
