@@ -6,8 +6,6 @@
 <title>Alpha College - Another Home</title>
 <link rel="stylesheet" href="style.css">
 <script src="/assets/jquery-3.7.0.min.js"></script>
-<script src='/assets/nprogress.js'></script>
-<link rel='stylesheet' href='/assets/nprogress.css' />
 </head>
 <body>
 
@@ -26,11 +24,11 @@ Please enable JavaScript in your web browser!</p>
 <div class="row">
 <div class="col-3 col-s-3 menubar" id="nav">
 <ul>
-<a href="/src/notice"><li>Notifications</li></a>
-<a href="/src/faculty"><li>Faculty</li></a>
-<a href="/src/results"><li>Results</li></a>
-<a href="/src/about"><li>About</li></a>
-<a href="/src/contact"><li>Contact</li></a>
+<a href="/#" id="notice"><li>Notifications</li></a>
+<a href="#" id="faculty"><li>Faculty</li></a>
+<a href="#" id="results"><li>Results</li></a>
+<a href="#" id="about"><li>About</li></a>
+<a href="#" id="contact"><li>Contact</li></a>
 </ul>
 </div>
 
@@ -43,41 +41,6 @@ Please enable JavaScript in your web browser!</p>
   <p>&copy; Alpha College - All rights reserved</p>
 <a style="color:white;" href="/">[Revert to Version 1.0]</a>
 </div>
-
-<script>
-    $('body').show();
-    $('.version').text(NProgress.version);
-    NProgress.start();
-    setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
-    
-    $(document).ready(function() {
-      $('#content').load('home');
-    });
-    
-    $(function() {
-      $('#nav a').on('click', function(e) {
-        e.preventDefault();
-        var page = $(this).attr('href');
-        $('#content').load(page);
-      });
-    });
-    $(document).bind("contextmenu", function(e) {
-      return false;
-    });
-    
-    $("#nav a").click(function() {
-  NProgress.start();
-
-  setTimeout(function() {
-    NProgress.set(0.4);
-
-    setTimeout(function() {
-      NProgress.done();
-    }, 300);
-
-    NProgress.start();
-  }, 300);
-});
-</script>
+<script src="/assets/router.js"></script>
 </body>
 </html>
