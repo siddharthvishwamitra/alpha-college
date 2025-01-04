@@ -1,6 +1,6 @@
  <div class="pay-form">
-    <h2>College Fee Payment Form</h2>
-    <form action="/submit-fee" method="POST">
+    <h2>Pay Fee Online</h2>
+    <form action="#" method="POST">
       <label for="student-name">Student Name:</label>
       <input type="text" id="student-name" name="student-name" required>
 
@@ -28,20 +28,20 @@
       <label for="transaction-id">Transaction ID:</label>
       <input type="text" id="transaction-id" name="transaction-id" required>
 
-      <button type="submit">Pay Fee</button>
+      <button type="submit" disabled>Pay Fee</button>
     </form>
   </div>
 
   <style>
     .pay-form {
       max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
+      margin: 0 auto;
+      padding: 8px;
     }
 
     .pay-form h2 {
       text-align: center;
-      color: #6610F2;
+      padding-bottom: 5px;
     }
 
     .pay-form label {

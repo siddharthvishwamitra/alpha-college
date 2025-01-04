@@ -79,7 +79,7 @@ footer p, p a {
   color: #030303;
   padding: 0px 5px 5px 5px;
   margin-bottom: 20px;
-  border: 1.5px solid #cccccc;
+  border: 1px solid #272727;
   border-radius: 4px;
   font-size: 90%;
   padding: min(12px, 5%);
@@ -240,6 +240,7 @@ border: 1px solid #ddd;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  border: none!important;
 }
 .gradient_5 {
   background: linear-gradient(45deg, #36d1dc, #5b86e5);
