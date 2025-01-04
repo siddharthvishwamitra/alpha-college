@@ -5,7 +5,7 @@ $(document).ready(function() {
     $.getScript(pagePath)
       .done(function() {
         const pageContent = window.pageContent || "<h2>404 Not Found</h2><p>The page you are looking for doesn't exist.</p>";
-        const pageTitle = window.pageTitle || 'Default Title';
+        const pageTitle = window.pageTitle || 'Alpha College';
 
         $('#content').html(pageContent);
         $('a').removeClass('active');
