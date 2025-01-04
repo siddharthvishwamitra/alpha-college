@@ -19,20 +19,20 @@ $(document).ready(function() {
 
   const loadPageFromUrl = () => {
     const queryParams = new URLSearchParams(window.location.search);
-    const page = queryParams.keys().next().value || window.location.hash.substring(1) || 'home';
+    const page = queryParams.get('page') || 'home'; // Use 'page' query parameter, default to 'home'
     loadPage(page);
   };
 
-  loadPageFromUrl();
+  loadPageFromUrl(); // Initial page load
 
   $(document).on('click', 'a', function(e) {
     const linkId = $(this).attr('id');
     if (linkId) {
       e.preventDefault();
-      history.pushState({ page: linkId }, '', `?${linkId}`);
+      history.pushState({ page: linkId }, '', `?page=${linkId}`);
       loadPage(linkId);
     }
   });
 
-  window.onpopstate = loadPageFromUrl;
+  window.onpopstate = loadPageFromUrl; // Handle back/forward navigation
 });
