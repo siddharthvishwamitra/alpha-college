@@ -23,8 +23,8 @@ $(document).ready(function() {
     if (pages[linkId]) {
       $('#content').load(pages[linkId], function(response, status) {
         if (status === 'error') {
-          $('#content').html('<h1>404 - Page Not Found</h1>');
-          document.title = '404 - Page Not Found';
+          $('#content').html('<h2>404 - Page Not Found</h2><p>The page you are looking for does not exist.</p>');
+          document.title = 'Page Not Found';
         }
       });
       $('a').removeClass('active');
