@@ -29,10 +29,10 @@ $(document).ready(function() {
       });
       $('a').removeClass('active');
       $(`#${linkId}`).addClass('active');
-      document.title = pageTitles[linkId] || 'Default Title';
+      document.title = pageTitles[linkId] || 'Alpha College Untitled';
     } else {
-      $('#content').html('<h1>404 - Page Not Found</h1>');
-      document.title = '404 - Page Not Found';
+      $('#content').html('<h2>404 - Page Not Found</h2><p>The page you are looking for does not exist.</p>');
+      document.title = 'Page Not Found';
     }
   };
 
