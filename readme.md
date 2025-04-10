@@ -19,4 +19,4 @@ Alpha College is a simple, client-side web application that allows users to navi
 ## Setup and Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/siddharthjkamra/alpha-college.git
+   git clone https://github.com/siddharthvishwamitra/alpha-college.git
