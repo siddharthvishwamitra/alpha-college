@@ -7,6 +7,9 @@ $(document).ready(function() {
     faculty: '/src/faculty',
     results: '/src/results',
     payfee: '/src/payfee',
+    enrolment: '/src/enrolment',
+    examform: '/src/exam-form',
+    unavailable: '/src/unavailable'
   };
 
   const pageTitles = {
@@ -17,6 +20,9 @@ $(document).ready(function() {
     faculty: 'Faculty',
     results: 'Results',
     payfee: 'Pay Fee',
+    enrolment: 'Apply for Enrolment',
+    examform: 'Fill Exam Form',
+    unavailable: 'Service Unavailable'
   };
 
   const loadPage = (linkId) => {

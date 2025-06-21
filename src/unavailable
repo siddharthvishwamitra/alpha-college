@@ -1,0 +1,23 @@
+<div class="unavailable">
+  <h2 class="title-design">Service Unavailable</h2>
+  <p>This service isn't available at this moment!</p>
+</div>
+
+<style>
+  .unavailable {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8px;
+    min-height: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .unavailable h2 {
+    padding-bottom: 10px;
+  }
+</style>

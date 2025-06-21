@@ -1,0 +1,93 @@
+<div class="pay-form">
+  <h2 class="title-design">Exam Form</h2>
+  <form action="#" method="POST">
+    
+    <!-- Student Info -->
+    <label for="student-name">Student Name:</label>
+    <input type="text" id="student-name" name="student-name" required>
+    
+    <label for="student-id">Student ID:</label>
+    <input type="text" id="student-id" name="student-id" required>
+    
+    <label for="course">Course:</label>
+    <select id="course" name="course" required>
+      <option value="">-- Select Course --</option>
+      <option value="engineering">Engineering</option>
+      <option value="science">Science</option>
+      <option value="commerce">Commerce</option>
+    </select>
+    
+    <!-- Subjects -->
+    <label for="subjects">Subjects (hold Ctrl/Cmd to select multiple):</label>
+    <select id="subjects" name="subjects[]" multiple size="5" required>
+      <option value="maths">Mathematics</option>
+      <option value="physics">Physics</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="economics">Economics</option>
+      <option value="accounting">Accounting</option>
+      <option value="english">English</option>
+    </select>
+    
+    <!-- Exam Preferences -->
+    <label for="exam-center">Preferred Exam Center:</label>
+    <input type="text" id="exam-center" name="exam-center" required>
+    
+    <label for="exam-date">Preferred Exam Date:</label>
+    <input type="date" id="exam-date" name="exam-date" required>
+    
+    <label for="mode">Exam Mode:</label>
+    <select id="mode" name="mode" required>
+      <option value="">-- Select Mode --</option>
+      <option value="offline">Offline (Center Based)</option>
+      <option value="online">Online (Remote)</option>
+    </select>
+    
+    <!-- Submit -->
+    <button type="submit">Pay Exam Fee</button>
+  </form>
+</div>
+
+  <style>
+    .pay-form {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 8px;
+    }
+
+    .pay-form h2 {
+      text-align: center;
+      padding-bottom: 5px;
+    }
+
+    .pay-form label {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
+      display: block;
+    }
+
+    .pay-form input,
+    .pay-form select,
+    .pay-form button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 16px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      outline-color: black;
+      background: #ffffff;
+    }
+
+    .pay-form button {
+      background-color: #6610F2;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .pay-form button:hover {
+      background-color: #4b08c9;
+    }
+  </style>

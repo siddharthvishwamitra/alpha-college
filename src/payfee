@@ -1,5 +1,5 @@
  <div class="pay-form">
-    <h2>Pay Fee Online</h2>
+    <h2 class="title-design">Pay Fee Online</h2>
     <form action="#" method="POST">
       <label for="student-name">Student Name:</label>
       <input type="text" id="student-name" name="student-name" required>
