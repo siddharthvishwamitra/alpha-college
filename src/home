@@ -31,6 +31,14 @@
 <img src="/images/img4.jpg" alt="photo" />
 </div>
 
+<div class="GalleryImg">
+ <img src="/images/img1.jpg" alt="photo" />
+</div>
+
+<div class="GalleryImg">
+ <img src="/images/img2.jpg" alt="photo" />
+</div>
+
 </div>
 <!-- Gallery Ends-->
 </div>
@@ -44,8 +52,8 @@ display: block;
 .container-hp {
 box-sizing: border-box;
 display: flex;
-justify-content: center; /* Center horizontally */
-align-items: center; /* Center vertically */
+justify-content: center;
+align-items: center;
 background-color: #f4f2f2;
 padding: 15px;
 }
