@@ -1,5 +1,5 @@
 <div class="pay-form">
-  <h2 class="title-design">Exam Form</h2>
+  <h3 class="title-design">Exam Form</h3>
   <form action="#" method="POST">
     
     <!-- Student Info -->

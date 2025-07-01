@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 * {
-  font-family: "Outfit", sans-serif;
+  font-family: 'Space Mono', monospace;
   box-sizing: border-box;
   margin: 0;
   -webkit-tap-highlight-color: transparent;
@@ -33,11 +34,13 @@ div.scrollmenu::-webkit-scrollbar {
     display: none;
 }
 div.scrollmenu a {
+  font-family: "Inconsolata", monospace;
   display: inline-block;
   color: #ffffff;
   text-align: center;
   padding: 14px;
   text-decoration: none;
+  font-size: 17px;
   box-sizing: border-box;
   transition: background-color 0.2s;
 }
@@ -58,7 +61,11 @@ footer {
   background-color: #121212;
   color: #ffffff;
   text-align: center;
+  font-size: 16px;
   padding: 20px;
+}
+footer p, p a {
+  font-family: "Inconsolata", monospace;
 }
 /* Pay Button */
 .paybtn {
@@ -67,15 +74,17 @@ footer {
 }
 .paybtn li {
   background-color: #ffffff;
+  font-weight: normal;
   text-decoration: none;
   color: #030303;
   padding: 0px 5px 5px 5px;
   margin-bottom: 20px;
   border: 1px solid #272727;
   border-radius: 4px;
+  font-size: 90%;
   padding: min(12px, 5%);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: bold;
 }
 .paybtn li:active {
   transform: translateY(2px);
@@ -90,7 +99,8 @@ footer {
   background-color: #141414;
   color: white;
   padding: 10px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: bold;
 }
 #content .results {
   list-style-type: none;
@@ -102,6 +112,8 @@ footer {
   border-bottom: 1px solid #e8e8e8;
   padding: 5px;
   vertical-align: middle;
+  font-family: "Inconsolata", monospace;
+  font-size: 17px;
 }
 #content .results li:before {
   content: "";
@@ -188,6 +200,7 @@ a {
   text-decoration: none;
 }
 h2 {
+  font-family: "Inconsolata", monospace;
   margin-bottom: 10px;
 }
 .timing {
@@ -282,10 +295,6 @@ border: 1px solid #ddd;
   cursor: pointer;
 }
 
-.pb-8 {
-  padding-bottom: 8px;
-}
-
 @media only screen and (min-width: 600px) {
   .mt-20 {
     padding-top: 20px;
@@ -301,6 +310,7 @@ border: 1px solid #ddd;
   justify-content: center;
   color: #121212;
   font-weight: 700;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -315,10 +325,6 @@ border: 1px solid #ddd;
   max-width: 100px;
   background: linear-gradient(to right, #026ccc, #026ccc);
   border-radius: 2px;
-}
-
-.last-update{
-  color: red;
 }
 
 .loader {
