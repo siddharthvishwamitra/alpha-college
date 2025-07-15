@@ -48,6 +48,11 @@
 display: block;
 }
 
+.container-hp .img-css {
+margin-top: -8px!important;
+border-radius: 0.1rem;
+}
+
 @media screen and (min-width: 600px) {
 .container-hp {
 box-sizing: border-box;
@@ -70,5 +75,6 @@ padding: 10px 50px 50px 50px;
 }
 .center-content h2 {
 font-size: 30px;
+}
 }
 </style>

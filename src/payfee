@@ -47,7 +47,7 @@
     .pay-form label {
       font-size: 14px;
       font-weight: bold;
-      color: #333;
+      color: #272727;
       margin-top: 10px;
       display: block;
     }
@@ -70,6 +70,7 @@
       color: white;
       border: none;
       cursor: pointer;
+      font-weight: 600;
     }
 
     .pay-form button:hover {
